@@ -1,1288 +1,374 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Anoop Kumar Portfolio</title>
-	<link rel="icon" type="img/png" href="img/anoop.png" hreflang="en-us">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Portfolio - Anoop Kumar . Made using HTML and CSS"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anoop Kumar Portfolio</title>
+    <link rel="icon" type="image/png" href="img/anoop.png">
+    <!-- Google Fonts - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'matte-black': '#1A1A1A',
+                        'purple-accent': '#A020F0',
+                        'light-gray': '#EAEAEA',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          body {
+            @apply bg-matte-black text-light-gray font-poppins;
+          }
+        }
+    </style>
 </head>
-
-<!-- Designed by Anoop Kumar -->
-
-<body>
-
-<!-- Header -->
-
-<header class="header">
-	<div class="container" >
-		<div class="row">
-			<div class="logo">
-				<a href="#">Anoop Kumar</a>
-			</div>
-			<input type="checkbox" id="nav_check">
-			<label for="nav_check" class="nav-toggler">
-				<span></span>
-			</label>
-			<nav class="nav">
-				<ul>
-					<li><a href="#home">home</a></li>
-					<li><a href="#why_us">why me?</a></li>
-					<li><a href="#courses">what i do?</a></li>
-					<li><a href="#reviews">recommendations</a></li>
-					<li><a href="#contact">projects</a></li>
-					<li><a href="#footer">canva</a></li>
-					<li><a href="#footer">contact</a></li>
-
-				</ul>
-			</nav>
-		</div>
-	</div>
-	
-</header>
-
-<!-- Home Section -->
-
-<section class="home-section" id="home">
-	<div class="container">
-		<div class="row h-100 align-items-center align-content-center ">
-			<div class="home-text">
-				<h1>Hello! I'm <span><br>Anoop Kumar</span></h1>
-				<h2>Software Developer</h2>
-				<a href="#why_us" class="btn btn-1">know more</a>
-			</div>
-			<div class="home-img">
-				<div class="home-img-inner">
-					<div class="home-course">
-						<div class="home-course-item">Android</div>
-						<div class="home-course-item">WordPress</div>
-						<div class="home-course-item"></div>
-						<div class="home-course-item">Canva</div>
-					</div>
-					<img src="img/anoop.png" alt="home-img">
-				</div>
-			</div>
-		</div>
-	</div>
-	
-</section>
-
-<!-- Why us section  -->
-
-
-<section class="why-us-section  sec-padding" id="why_us">
-	<div class="container">
-		<div class="row">
-			<div class="section-title">
-				<h2> why <span> me ? </span></h2>
-			</div>
-		</div>
-		<div class="row">
-			<div class="why-us-item">
-				<div class="icon">
-					<i class="fa fa-thumb-tack" aria-hidden="true"></i>
-				</div>
-				<h3>exceptional results</h3>
-				<p>I possess a combination of skills and experience that makes me stand out. Hiring me will make your life colourful & easier.</p>
-				
-			</div>
-
-
-			<div class="why-us-item">
-				<div class="icon">
-					<i class="fa fa-paint-brush" aria-hidden="true"></i>
-				</div>
-				<h3>creative</h3>
-				<p>I communicate ideas to inspire and inform consumers and I ensure that the designs accurately reflect the desired message.</p>
-				
-			</div>
-
-
-			<div class="why-us-item">
-				<div class="icon">
-					<i class="fa fa-laptop" aria-hidden="true"></i>
-				</div>
-				<h3>energetic and attentive</h3>
-				<p> I incorporate changes recommended by the clients into the final design and Advise clients on strategies to reach a particular audience.</p>
-				
-			</div>
-		</div>
-	</div>
-</section>
-
-
-<!-- What I design -->
-
-<section class="courses-section sec sec-padding" id="courses">
-<div class="container">
-		<div class="row">
-			<div class="section-title">
-				<h2> <span> what </span> i do ?</h2>
-			</div>
-		</div>
-		<div class="row">
-			<div class="course-item">
-
-					<div class="course-img">
-						<img src="img/23.png" style="width: 300px; height: 300px; padding: 0px;">
-					</div>
-					<div class="course-info">
-						<h3>Android Development</h3>
-					</div>
-				
-			</div>
-
-
-			<div class="course-item">
-
-					<div class="course-img">
-						<img src="img/24.png" style="width: 300px; /*height: 200px*/ padding: 0px;">
-					</div>
-					<div class="course-info">
-						<h3>WordPress Development</h3>
-					</div>
-				
-			</div>
-
-			<div class="course-item">
-			
-					<div class="course-img">
-						<img src="img/25.png" style="width: 300px; /*height: 200px*/ padding: 0px;">
-					</div>
-					<div class="course-info">
-						<h3>Web Development</h3>
-					</div>
-				
-			</div>
-
-
-			<div class="course-item">
-			
-					<div class="course-img">
-						<img src="img/26.png" style="width: 300px; /*height: 200px*/ padding: 0px;">
-					</div>
-					<div class="course-info">
-						<h3>Graphic Designs</h3>
-					</div>
-				
-			</div>
-
-
-		</div>
-	</div>
-</section>
-
-
-<!-- Work exp -->
-<section class="fun-facts-section sec-padding">
-	<div class="container">
-		<div class="row">
-			<div class="section-title">
-				<h2>Work <span>Experience</span></h2>
-			</div>
-		</div>
-		<div class="row">
-			<div class="fun-facts-img">
-				<img src="img/work.png">
-			</div>
-				<div class="fun-facts-items">
-					<div class="row">
-						<div class="fun-facts-item">
-							<h3>Website/<br>Application Developer</h3>
-							<p>BLDE(Deemed to be University)</p>
-						</div>
-
-						<div class="fun-facts-item">
-							<h3>WordPress Developer</h3>
-							<p>Cubicide Technologies Pvt Ltd.</p>
-						</div>
-
-						<div class="fun-facts-item">
-							<h3>Iot <br>Intern</h3>
-							<p>Technimax IT Services Pvt Ltd.</p>
-						</div>
-
-						<div class="fun-facts-item">
-							<h3>Freelancing <br> Projects</h3>
-							<p>Build Websites & Logo Designing</p>
-						</div>
-
-						<div class="fun-facts-item">
-							<h3>More<br> <a href="https://www.linkedin.com/in/anoopkumarkammari/"><i class="fa fa-linkedin-square" aria-hidden="true" style="color: var(--main-color);"></i></a> </h3><br>
-							<p>Check more on Linkedin </p>
-						</div>
-					</div>
-					
-				</div>
-			
-		</div>
-	</div>
-</section>
-
-<!-- Reviews -->
-
-<section class="reviews-section  sec-padding" id="reviews">
-	<div class="container">
-		<div class="row">
-			<div class="section-title">
-				<h2> My <span> recommendations </span></h2>
-			</div>
-		</div>
-		<div class="row">
-			<div class="review-item">
-				<img src="img/6.png">
-				<p> <i class="fa fa-quote-left" aria-hidden="true"></i> Anoop is a very helpful and understanding person
-					He understands the business requirments and works accordingly He helps and has very good knowledge of the market and gives very good ideas I am totally satisfied with his work n maintaince features <i class="fa fa-quote-right" aria-hidden="true"></i></p>
-				<h3>Santosh</h3>
-				<span>Client - Midwest AutoParts</span>
-			</div>
-
-
-			<div class="review-item">
-				<img src="img/13.png">
-				<p> <i class="fa fa-quote-left" aria-hidden="true"></i> It's awesome design ,great work on the website with the best price in the market I wish more success and growth for your company. I will definetly recommend him to all my official and personal contacts to give him more businnes as he is very economical too.<i class="fa fa-quote-right" aria-hidden="true"></i></p>
-				<h3>Sameer</h3>
-				<span>Client - Pinnacle Talent Solutions</span>
-			</div>
-
-		</div>
-	</div>
-</section>
-
-<!-- Projects Jquery section -->
-
-
-<section class="why-us-section  sec-padding" id="contact">
-	<div class="container">
-		<div class="row">
-			<div class="section-title">
-				<h2> my <span> Projects </span></h2>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="design-item">
-				<a href="https://mid-westautoparts.com/" target="_blank" rel="noopener noreferrer">
-					<img src="img/27.png"  class="design-img" style="width: 400px; height: 350px;">
-				</a>
-			</div>
-			
-			<div class="design-item">
-				<a href="https://pinnacletalentsolutions.com/" target="_blank" rel="noopener noreferrer">
-					<img src="img/28.png" class="design-img" style="width: 400px; height: 350px;">
-				</a>
-			</div>
-
-			<div class="design-item">
-				<a href="https://fftisolutions.com/" target="_blank" rel="noopener noreferrer">
-					<img src="img/29.png" class="design-img" style="width: 400px; height: 350px;">
-				</a>
-			</div>
-
-			<div class="section-title" id="canva">
-				<h2> <span> Canva </span></h2>
-			</div>
-			<!-- Canva Images -->
-			<ul class="slides">
-    <input type="radio" name="radio-btn" id="img-1" checked />
-    <li class="slide-container">
-		<div class="slide">
-			<img src="img/canva/1.png" />
-        </div>
-		<div class="nav">
-			<label for="img-86" class="prev">&#x2039;</label>
-			<label for="img-2" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-2" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/2.png" />
-        </div>
-		<div class="nav">
-			<label for="img-1" class="prev">&#x2039;</label>
-			<label for="img-3" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-3" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/3.png" />
-        </div>
-		<div class="nav">
-			<label for="img-2" class="prev">&#x2039;</label>
-			<label for="img-4" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-4" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/4.png" />
-        </div>
-		<div class="nav">
-			<label for="img-3" class="prev">&#x2039;</label>
-			<label for="img-5" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-5" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/5.png" />
-        </div>
-		<div class="nav">
-			<label for="img-4" class="prev">&#x2039;</label>
-			<label for="img-6" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-6" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/6.png" />
-        </div>
-		<div class="nav">
-			<label for="img-5" class="prev">&#x2039;</label>
-			<label for="img-7" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-7" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/7.png" />
-        </div>
-		<div class="nav">
-			<label for="img-6" class="prev">&#x2039;</label>
-			<label for="img-8" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-8" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/8.png" />
-        </div>
-		<div class="nav">
-			<label for="img-7" class="prev">&#x2039;</label>
-			<label for="img-9" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-9" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/9.png" />
-        </div>
-		<div class="nav">
-			<label for="img-9" class="prev">&#x2039;</label>
-			<label for="img-10" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-10" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/10.png" />
-        </div>
-		<div class="nav">
-			<label for="img-9" class="prev">&#x2039;</label>
-			<label for="img-11" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-11" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/11.png" />
-        </div>
-		<div class="nav">
-			<label for="img-10" class="prev">&#x2039;</label>
-			<label for="img-12" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-12" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/12.png" />
-        </div>
-		<div class="nav">
-			<label for="img-11" class="prev">&#x2039;</label>
-			<label for="img-13" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-13" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/13.png" />
-        </div>
-		<div class="nav">
-			<label for="img-12" class="prev">&#x2039;</label>
-			<label for="img-14" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-14" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/14.png" />
-        </div>
-		<div class="nav">
-			<label for="img-13" class="prev">&#x2039;</label>
-			<label for="img-15" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-15" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/15.png" />
-        </div>
-		<div class="nav">
-			<label for="img-14" class="prev">&#x2039;</label>
-			<label for="img-16" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-16" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/16.png" />
-        </div>
-		<div class="nav">
-			<label for="img-15" class="prev">&#x2039;</label>
-			<label for="img-17" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-17" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/17.png" />
-        </div>
-		<div class="nav">
-			<label for="img-16" class="prev">&#x2039;</label>
-			<label for="img-18" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-18" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/18.png" />
-        </div>
-		<div class="nav">
-			<label for="img-17" class="prev">&#x2039;</label>
-			<label for="img-19" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-19" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/19.png" />
-        </div>
-		<div class="nav">
-			<label for="img-18" class="prev">&#x2039;</label>
-			<label for="img-20" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-20" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/20.png" />
-        </div>
-		<div class="nav">
-			<label for="img-19" class="prev">&#x2039;</label>
-			<label for="img-21" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-21" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/21.png" />
-        </div>
-		<div class="nav">
-			<label for="img-20" class="prev">&#x2039;</label>
-			<label for="img-22" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-22" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/22.png" />
-        </div>
-		<div class="nav">
-			<label for="img-21" class="prev">&#x2039;</label>
-			<label for="img-23" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-23" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/23.png" />
-        </div>
-		<div class="nav">
-			<label for="img-22" class="prev">&#x2039;</label>
-			<label for="img-24" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-24" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/24.png" />
-        </div>
-		<div class="nav">
-			<label for="img-23" class="prev">&#x2039;</label>
-			<label for="img-25" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-25" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/25.png" />
-        </div>
-		<div class="nav">
-			<label for="img-24" class="prev">&#x2039;</label>
-			<label for="img-26" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-26" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/26.png" />
-        </div>
-		<div class="nav">
-			<label for="img-25" class="prev">&#x2039;</label>
-			<label for="img-27" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-27" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/27.png" />
-        </div>
-		<div class="nav">
-			<label for="img-26" class="prev">&#x2039;</label>
-			<label for="img-28" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-28" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/28.png" />
-        </div>
-		<div class="nav">
-			<label for="img-27" class="prev">&#x2039;</label>
-			<label for="img-29" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-29" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/29.png" />
-        </div>
-		<div class="nav">
-			<label for="img-28" class="prev">&#x2039;</label>
-			<label for="img-30" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-30" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/30.png" />
-        </div>
-		<div class="nav">
-			<label for="img-29" class="prev">&#x2039;</label>
-			<label for="img-31" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-31" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/31.png" />
-        </div>
-		<div class="nav">
-			<label for="img-30" class="prev">&#x2039;</label>
-			<label for="img-32" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-32" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/32.png" />
-        </div>
-		<div class="nav">
-			<label for="img-31" class="prev">&#x2039;</label>
-			<label for="img-33" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-33" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/33.png" />
-        </div>
-		<div class="nav">
-			<label for="img-32" class="prev">&#x2039;</label>
-			<label for="img-34" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-34" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/34.png" />
-        </div>
-		<div class="nav">
-			<label for="img-33" class="prev">&#x2039;</label>
-			<label for="img-35" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-35" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/35.png" />
-        </div>
-		<div class="nav">
-			<label for="img-34" class="prev">&#x2039;</label>
-			<label for="img-36" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-36" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/36.png" />
-        </div>
-		<div class="nav">
-			<label for="img-35" class="prev">&#x2039;</label>
-			<label for="img-37" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-37" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/37.png" />
-        </div>
-		<div class="nav">
-			<label for="img-36" class="prev">&#x2039;</label>
-			<label for="img-38" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-38" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/38.png" />
-        </div>
-		<div class="nav">
-			<label for="img-37" class="prev">&#x2039;</label>
-			<label for="img-39" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-39" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/39.png" />
-        </div>
-		<div class="nav">
-			<label for="img-38" class="prev">&#x2039;</label>
-			<label for="img-40" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-40" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/40.png" />
-        </div>
-		<div class="nav">
-			<label for="img-39" class="prev">&#x2039;</label>
-			<label for="img-41" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-41" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/41.png" />
-        </div>
-		<div class="nav">
-			<label for="img-40" class="prev">&#x2039;</label>
-			<label for="img-42" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-42" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/42.png" />
-        </div>
-		<div class="nav">
-			<label for="img-41" class="prev">&#x2039;</label>
-			<label for="img-43" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-43" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/43.png" />
-        </div>
-		<div class="nav">
-			<label for="img-42" class="prev">&#x2039;</label>
-			<label for="img-44" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-44" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/44.png" />
-        </div>
-		<div class="nav">
-			<label for="img-43" class="prev">&#x2039;</label>
-			<label for="img-45" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-45" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/45.png" />
-        </div>
-		<div class="nav">
-			<label for="img-44" class="prev">&#x2039;</label>
-			<label for="img-46" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-46" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/46.png" />
-        </div>
-		<div class="nav">
-			<label for="img-45" class="prev">&#x2039;</label>
-			<label for="img-47" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-47" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/47.png" />
-        </div>
-		<div class="nav">
-			<label for="img-46" class="prev">&#x2039;</label>
-			<label for="img-48" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-48" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/48.png" />
-        </div>
-		<div class="nav">
-			<label for="img-47" class="prev">&#x2039;</label>
-			<label for="img-49" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-49" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/49.png" />
-        </div>
-		<div class="nav">
-			<label for="img-48" class="prev">&#x2039;</label>
-			<label for="img-50" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-50" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/50.png" />
-        </div>
-		<div class="nav">
-			<label for="img-49" class="prev">&#x2039;</label>
-			<label for="img-51" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-51" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/51.png" />
-        </div>
-		<div class="nav">
-			<label for="img-50" class="prev">&#x2039;</label>
-			<label for="img-52" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-52" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/52.png" />
-        </div>
-		<div class="nav">
-			<label for="img-51" class="prev">&#x2039;</label>
-			<label for="img-53" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-53" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/53.png" />
-        </div>
-		<div class="nav">
-			<label for="img-52" class="prev">&#x2039;</label>
-			<label for="img-54" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-54" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/54.png" />
-        </div>
-		<div class="nav">
-			<label for="img-53" class="prev">&#x2039;</label>
-			<label for="img-55" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-55" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/55.png" />
-        </div>
-		<div class="nav">
-			<label for="img-54" class="prev">&#x2039;</label>
-			<label for="img-56" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-56" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/56.png" />
-        </div>
-		<div class="nav">
-			<label for="img-55" class="prev">&#x2039;</label>
-			<label for="img-57" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-57" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/57.png" />
-        </div>
-		<div class="nav">
-			<label for="img-56" class="prev">&#x2039;</label>
-			<label for="img-58" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-58" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/58.png" />
-        </div>
-		<div class="nav">
-			<label for="img-57" class="prev">&#x2039;</label>
-			<label for="img-59" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-59" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/59.png" />
-        </div>
-		<div class="nav">
-			<label for="img-58" class="prev">&#x2039;</label>
-			<label for="img-60" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-60" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/60.png" />
-        </div>
-		<div class="nav">
-			<label for="img-59" class="prev">&#x2039;</label>
-			<label for="img-61" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-61" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/61.png" />
-        </div>
-		<div class="nav">
-			<label for="img-60" class="prev">&#x2039;</label>
-			<label for="img-62" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-62" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/62.png" />
-        </div>
-		<div class="nav">
-			<label for="img-61" class="prev">&#x2039;</label>
-			<label for="img-63" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-63" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/63.png" />
-        </div>
-		<div class="nav">
-			<label for="img-62" class="prev">&#x2039;</label>
-			<label for="img-64" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-64" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/64.jpg" />
-        </div>
-		<div class="nav">
-			<label for="img-63" class="prev">&#x2039;</label>
-			<label for="img-65" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-65" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/65.jpeg" />
-        </div>
-		<div class="nav">
-			<label for="img-64" class="prev">&#x2039;</label>
-			<label for="img-66" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-66" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/66.png" />
-        </div>
-		<div class="nav">
-			<label for="img-65" class="prev">&#x2039;</label>
-			<label for="img-67" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-67" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/67.png" />
-        </div>
-		<div class="nav">
-			<label for="img-66" class="prev">&#x2039;</label>
-			<label for="img-68" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-68" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/68.png" />
-        </div>
-		<div class="nav">
-			<label for="img-67" class="prev">&#x2039;</label>
-			<label for="img-69" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-69" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/69.png" />
-        </div>
-		<div class="nav">
-			<label for="img-68" class="prev">&#x2039;</label>
-			<label for="img-70" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-70" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/70.png" />
-        </div>
-		<div class="nav">
-			<label for="img-69" class="prev">&#x2039;</label>
-			<label for="img-71" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-71" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/71.png" />
-        </div>
-		<div class="nav">
-			<label for="img-70" class="prev">&#x2039;</label>
-			<label for="img-72" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-72" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/72.png" />
-        </div>
-		<div class="nav">
-			<label for="img-71" class="prev">&#x2039;</label>
-			<label for="img-73" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-73" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/73.png" />
-        </div>
-		<div class="nav">
-			<label for="img-72" class="prev">&#x2039;</label>
-			<label for="img-74" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-74" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/74.png" />
-        </div>
-		<div class="nav">
-			<label for="img-73" class="prev">&#x2039;</label>
-			<label for="img-75" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-75" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/75.jpg" />
-        </div>
-		<div class="nav">
-			<label for="img-74" class="prev">&#x2039;</label>
-			<label for="img-76" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-76" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/76.png" />
-        </div>
-		<div class="nav">
-			<label for="img-75" class="prev">&#x2039;</label>
-			<label for="img-77" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-77" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/77.png" />
-        </div>
-		<div class="nav">
-			<label for="img-76" class="prev">&#x2039;</label>
-			<label for="img-78" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-78" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/78.png" />
-        </div>
-		<div class="nav">
-			<label for="img-77" class="prev">&#x2039;</label>
-			<label for="img-79" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-79" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/79.jpg" />
-        </div>
-		<div class="nav">
-			<label for="img-78" class="prev">&#x2039;</label>
-			<label for="img-80" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-80" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/80.jpg" />
-        </div>
-		<div class="nav">
-			<label for="img-79" class="prev">&#x2039;</label>
-			<label for="img-81" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-81" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/81.jpg" />
-        </div>
-		<div class="nav">
-			<label for="img-80" class="prev">&#x2039;</label>
-			<label for="img-82" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-82" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/82.jpg" />
-        </div>
-		<div class="nav">
-			<label for="img-81" class="prev">&#x2039;</label>
-			<label for="img-83" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-83" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/83.jpg" />
-        </div>
-		<div class="nav">
-			<label for="img-82" class="prev">&#x2039;</label>
-			<label for="img-84" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-84" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/84.jpg" />
-        </div>
-		<div class="nav">
-			<label for="img-83" class="prev">&#x2039;</label>
-			<label for="img-85" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-85" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/85.png" />
-        </div>
-		<div class="nav">
-			<label for="img-84" class="prev">&#x2039;</label>
-			<label for="img-86" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-86" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="img/canva/86.png" />
-        </div>
-		<div class="nav">
-			<label for="img-85" class="prev">&#x2039;</label>
-			<label for="img-1" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-
-
-
-
-    
-</ul>
-			<!-- Canva Images -->
-
-
-	</div>
-</section>
-
-<!-- Footer -->
-<footer class="footer" id="footer">
-	<div class="container">
-		<div class="row">
-			<div class="footer-item footer-about">
-				<h2>about me</h2>
-				<p>A passionate and self-motivated individual, enthusiastically keen to learn and explore. </p>
-				<div class="social-links">
-					
-					<a href="https://www.linkedin.com/in/anoopkumarkammari/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-					<a href="https://instagram.com/_anoop_kumar_"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-					<a href="mailto:anoopkumarkammari@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-					<a href="tel:7795587127"><i class="fa fa-phone" aria-hidden="true"></i></a>
-
-
-				</div>
-			</div>
-
-			<div class="footer-item footer-quick-links">
-				<h2>quick links</h2>
-				<ul>
-				<li><a href="#why_us">Why me</a></li>
-				<li><a href="#courses">What i do</a></li>
-				<li><a href="#reviews">Recommendations</a></li>
-				<li><a href="#contact">Projects</a></li>
-				</ul>
-			</div>
-
-			<div class="footer-item footer-contact">
-				<h2>contact me</h2>
-				<p><i class="fa fa-map-marker" aria-hidden="true"></i> Vijayapura,India</p>
-				<p><i class="fa fa-envelope" aria-hidden="true"></i> anoopkumarkammari<br>@gmail.com</p>
-				<p><i class="fa fa-phone" aria-hidden="true"></i> +91 7795587127</p>
-			</div>
-
-			<div class="footer-item footer-more">
-				<h2>© K S Anoop Kumar <hr><br> Made with ❤️ <br>  Portfolio 🖌️<br>Made using Html, Css & Canva 💻 </h2>
-			</div>
-		</div>
-	</div>
-</footer>
+<body class="bg-matte-black text-light-gray font-poppins antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <a href="#" class="text-2xl font-bold text-purple-accent">Anoop Kumar</a>
+            </div>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#home" class="hover:text-purple-accent transition-colors duration-300">Home</a>
+                <a href="#projects" class="hover:text-purple-accent transition-colors duration-300">Projects</a>
+                <a href="#about" class="hover:text-purple-accent transition-colors duration-300">About</a>
+                <a href="#contact" class="hover:text-purple-accent transition-colors duration-300">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-light-gray focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-matte-black/90 backdrop-blur-sm">
+            <a href="#home" class="block py-2 px-6 hover:bg-purple-accent/20 transition-colors duration-300">Home</a>
+            <a href="#projects" class="block py-2 px-6 hover:bg-purple-accent/20 transition-colors duration-300">Projects</a>
+            <a href="#about" class="block py-2 px-6 hover:bg-purple-accent/20 transition-colors duration-300">About</a>
+            <a href="#contact" class="block py-2 px-6 hover:bg-purple-accent/20 transition-colors duration-300">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content Area - Bento Grid -->
+    <main class="pt-24 md:pt-28 container mx-auto px-4 sm:px-6">
+
+        <!-- Home Section / Bento Grid -->
+        <section id="home" class="min-h-screen py-8 md:py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+
+                <!-- About Me (Larger Box) -->
+                <div class="md:col-span-2 lg:col-span-2 row-span-1 bg-matte-black/70 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-purple-accent/20 hover:border-purple-accent/50 transition-all duration-300">
+                    <h2 class="text-2xl font-semibold text-purple-accent mb-4">About Me</h2>
+                    <p class="text-light-gray/90 text-sm sm:text-base leading-relaxed">
+                        A passionate and self-motivated individual, enthusiastically keen to learn and explore. I bring creative solutions and a dedicated work ethic to every project, always striving for exceptional results.
+                    </p>
+                </div>
+
+                <!-- Skills -->
+                <div class="lg:col-span-1 bg-matte-black/70 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-purple-accent/20 hover:border-purple-accent/50 transition-all duration-300">
+                    <h2 class="text-2xl font-semibold text-purple-accent mb-4">Skills</h2>
+                    <ul class="space-y-2 text-sm sm:text-base">
+                        <li class="flex items-center"><span class="w-2 h-2 bg-purple-accent rounded-full mr-3 shrink-0"></span>WordPress</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-purple-accent rounded-full mr-3 shrink-0"></span>Canva</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-purple-accent rounded-full mr-3 shrink-0"></span>Vibe Coding</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-purple-accent rounded-full mr-3 shrink-0"></span>Web Development</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-purple-accent rounded-full mr-3 shrink-0"></span>Graphic Design</li>
+                    </ul>
+                </div>
+
+                <!-- What I Do -->
+                <div class="md:col-span-1 lg:col-span-1 bg-matte-black/70 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-purple-accent/20 hover:border-purple-accent/50 transition-all duration-300">
+                    <h2 class="text-2xl font-semibold text-purple-accent mb-4">What I Do</h2>
+                    <ul class="space-y-2 text-sm sm:text-base">
+                        <li class="flex items-center"><span class="w-2 h-2 bg-purple-accent rounded-full mr-3 shrink-0"></span>Web Development</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-purple-accent rounded-full mr-3 shrink-0"></span>Graphic Design</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-purple-accent rounded-full mr-3 shrink-0"></span>Digital Marketing</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-purple-accent rounded-full mr-3 shrink-0"></span>WordPress Solutions</li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="md:col-span-1 lg:col-span-2 bg-matte-black/70 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-purple-accent/20 hover:border-purple-accent/50 transition-all duration-300">
+                    <h2 class="text-2xl font-semibold text-purple-accent mb-4">Connect</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <a href="mailto:anoopkumarkammari@gmail.com" class="hover:text-purple-accent transition-colors duration-300 flex items-center text-sm"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-purple-accent/70 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg>Email</a>
+                        <a href="https://www.linkedin.com/in/anoopkumarkammari/" target="_blank" rel="noopener noreferrer" class="hover:text-purple-accent transition-colors duration-300 flex items-center text-sm"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-purple-accent/70 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014V8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.337 7.433a1.06 1.06 0 01-.99-1.06V6.373c0-.585.445-1.06.99-1.06.553 0 .998.475.998 1.06v.001c0 .584-.445 1.06-.998 1.06zm2.67 8.905H2.667V8.59h2.67v7.748zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" /></svg>LinkedIn</a>
+                        <a href="https://instagram.com/_anoop_kumar_" target="_blank" rel="noopener noreferrer" class="hover:text-purple-accent transition-colors duration-300 flex items-center text-sm"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-purple-accent/70 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 0C4.477 0 0 4.477 0 10s4.477 10 10 10 10-4.477 10-10S15.523 0 10 0zm0 1.5a8.5 8.5 0 110 17 8.5 8.5 0 010-17zm0 4.143a4.357 4.357 0 100 8.714 4.357 4.357 0 000-8.714zM10 13a3 3 0 110-6 3 3 0 010 6zm0-7.5a.75.75 0 00-.75.75v.001c0 .414.336.75.75.75s.75-.336.75-.75V6.25a.75.75 0 00-.75-.75z" clip-rule="evenodd" /></svg>Instagram</a>
+                        <a href="tel:+917795587127" class="hover:text-purple-accent transition-colors duration-300 flex items-center text-sm"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-purple-accent/70 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" /></svg>Phone</a>
+                    </div>
+                </div>
+
+                <!-- Key Project (Larger Box) -->
+                <div id="projects" class="md:col-span-2 lg:col-span-2 bg-matte-black/70 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-purple-accent/20 hover:border-purple-accent/50 transition-all duration-300 flex flex-col">
+                    <h2 class="text-2xl font-semibold text-purple-accent mb-4">Key Project</h2>
+                    <div class="flex-grow flex flex-col sm:flex-row items-center sm:items-start">
+                        <img src="https://via.placeholder.com/400x250/A020F0/FFFFFF?text=National+Conference+Site" alt="Key Project Thumbnail" class="w-full sm:w-1/2 md:w-2/5 lg:w-1/3 rounded-lg mb-4 sm:mb-0 sm:mr-6 shadow-md object-cover">
+                        <div class="flex-grow">
+                            <h3 class="text-xl font-medium text-light-gray mb-2">National Conferences WordPress Site for IAPSMCON</h3>
+                            <p class="text-light-gray/80 text-sm sm:text-base leading-relaxed mb-3">
+                                Developed comprehensive WordPress websites for multiple national conferences, focusing on user experience, information architecture, and responsive design. Handled theme customization, plugin integration, and content management.
+                            </p>
+                            <button id="key-project-details-button" class="inline-block text-sm text-purple-accent font-semibold hover:underline">View Details &rarr;</button>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Canva Gallery Teaser -->
+                <div class="md:col-span-1 lg:col-span-2 bg-matte-black/70 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-purple-accent/20 hover:border-purple-accent/50 transition-all duration-300 flex flex-col items-center justify-center text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 sm:h-12 w-10 sm:w-12 text-purple-accent mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    <h2 class="text-xl font-semibold text-purple-accent mb-2">Canva Designs</h2>
+                    <p class="text-light-gray/80 text-xs sm:text-sm mb-3">A collection of my creative graphic designs.</p>
+                    <button id="canva-gallery-button" class="bg-purple-accent text-white text-sm py-2 px-4 rounded-md hover:bg-opacity-80 transition-colors duration-300">View Gallery</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- All primary content is now within the bento grid or modals. -->
+        <!-- The sections below were placeholders and have been removed for a cleaner bento-focused design. -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-matte-black border-t border-purple-accent/20">
+        <div class="container mx-auto px-6 text-center text-sm">
+            <p>&copy; <span id="current-year"></span> Anoop Kumar. All rights reserved.</p>
+            <p class="mt-1">Designed with <span class="text-purple-accent">&hearts;</span> using Tailwind CSS.</p>
+        </div>
+    </footer>
+
+    <!-- Canva Gallery Modal -->
+    <div id="canva-modal" class="fixed inset-0 bg-matte-black/80 backdrop-blur-md flex items-center justify-center z-[100] hidden p-4">
+        <div class="bg-matte-black/90 p-4 sm:p-6 md:p-8 rounded-xl shadow-2xl w-full max-w-3xl max-h-[90vh] flex flex-col border border-purple-accent/30 relative">
+            <button id="close-canva-modal" class="absolute top-4 right-4 text-light-gray/70 hover:text-purple-accent transition-colors z-[101]">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <h3 class="text-2xl sm:text-3xl font-semibold text-purple-accent mb-4 sm:mb-6 text-center">Canva Designs</h3>
+            <div class="relative flex-grow flex items-center justify-center w-full h-auto min-h-[200px] sm:min-h-[300px] md:min-h-[400px]">
+                <img id="canva-modal-img" src="" alt="Canva Design" class="max-w-full max-h-[70vh] object-contain rounded-lg shadow-lg">
+                <button id="prev-canva-img" class="absolute left-0 sm:left-2 top-1/2 -translate-y-1/2 bg-purple-accent/50 hover:bg-purple-accent/80 text-white p-2 sm:p-3 rounded-full transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                <button id="next-canva-img" class="absolute right-0 sm:right-2 top-1/2 -translate-y-1/2 bg-purple-accent/50 hover:bg-purple-accent/80 text-white p-2 sm:p-3 rounded-full transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+            <p id="canva-img-counter" class="text-center text-light-gray/70 mt-3 text-xs sm:text-sm">Image x of y</p>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scroll for navigation links - Placed earlier for better structure
+        document.querySelectorAll('header a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when a link is clicked
+            const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+            for (let link of mobileMenuLinks) {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            }
+        }
+
+        // Set current year in footer
+        const currentYearElement = document.getElementById('current-year');
+        if (currentYearElement) {
+            currentYearElement.textContent = new Date().getFullYear();
+        }
+
+        // Canva Gallery Modal Logic
+        const canvaGalleryButton = document.getElementById('canva-gallery-button');
+        const canvaModal = document.getElementById('canva-modal');
+        const closeCanvaModalButton = document.getElementById('close-canva-modal');
+        const canvaModalImg = document.getElementById('canva-modal-img');
+        const prevCanvaImgButton = document.getElementById('prev-canva-img');
+        const nextCanvaImgButton = document.getElementById('next-canva-img');
+        const canvaImgCounter = document.getElementById('canva-img-counter');
+
+        const canvaImages = [
+            "1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png", "8.png", "9.png", "10.png",
+            "11.png", "12.png", "13.png", "14.png", "15.png", "16.png", "17.png", "18.png", "19.png", "20.png",
+            "21.png", "22.png", "23.png", "24.png", "25.png", "26.png", "27.png", "28.png", "29.png", "30.png",
+            "31.png", "32.png", "33.png", "34.png", "35.png", "36.png", "37.png", "38.png", "39.png", "40.png",
+            "41.png", "42.png", "43.png", "44.png", "45.png", "46.png", "47.png", "48.png", "49.png", "50.png",
+            "51.png", "52.png", "53.png", "54.png", "55.png", "56.png", "57.png", "58.png", "59.png", "60.png",
+            "61.png", "62.png", "63.png", "64.jpg", "65.jpeg", "66.png", "67.png", "68.png", "69.png", "70.png",
+            "71.png", "72.png", "73.png", "74.png", "75.jpg", "76.png", "77.png", "78.png", "79.jpg", "80.jpg",
+            "81.jpg", "82.jpg", "83.jpg", "84.jpg", "85.png", "86.png"
+        ];
+        let currentCanvaImageIndex = 0;
+
+        function updateCanvaModalImage() {
+            if (canvaModalImg && canvaImages.length > 0) {
+                canvaModalImg.src = `img/canva/${canvaImages[currentCanvaImageIndex]}`;
+            }
+            if (canvaImgCounter) {
+                canvaImgCounter.textContent = `Image ${currentCanvaImageIndex + 1} of ${canvaImages.length}`;
+            }
+        }
+
+        if (canvaGalleryButton && canvaModal) {
+            canvaGalleryButton.addEventListener('click', () => {
+                currentCanvaImageIndex = 0;
+                updateCanvaModalImage();
+                canvaModal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden'; // Prevent background scroll
+            });
+        }
+
+        if (closeCanvaModalButton && canvaModal) {
+            closeCanvaModalButton.addEventListener('click', () => {
+                canvaModal.classList.add('hidden');
+                document.body.style.overflow = ''; // Restore background scroll
+            });
+        }
+
+        if (prevCanvaImgButton) {
+            prevCanvaImgButton.addEventListener('click', () => {
+                currentCanvaImageIndex = (currentCanvaImageIndex - 1 + canvaImages.length) % canvaImages.length;
+                updateCanvaModalImage();
+            });
+        }
+
+        if (nextCanvaImgButton) {
+            nextCanvaImgButton.addEventListener('click', () => {
+                currentCanvaImageIndex = (currentCanvaImageIndex + 1) % canvaImages.length;
+                updateCanvaModalImage();
+            });
+        }
+
+        // Close modal on escape key
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                if (canvaModal && !canvaModal.classList.contains('hidden')) {
+                    canvaModal.classList.add('hidden');
+                    document.body.style.overflow = '';
+                }
+                if (projectModal && !projectModal.classList.contains('hidden')) {
+                    projectModal.classList.add('hidden');
+                    document.body.style.overflow = '';
+                }
+            }
+        });
+    </script>
+
+    <!-- Project Detail Modal -->
+    <div id="project-modal" class="fixed inset-0 bg-matte-black/80 backdrop-blur-md flex items-center justify-center z-[100] hidden p-4">
+        <div class="bg-matte-black/90 p-4 sm:p-6 md:p-8 rounded-xl shadow-2xl w-full max-w-3xl max-h-[90vh] flex flex-col border border-purple-accent/30 relative overflow-y-auto">
+            <button id="close-project-modal" class="absolute top-4 right-4 text-light-gray/70 hover:text-purple-accent transition-colors z-[101]">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <h3 id="project-modal-title" class="text-2xl sm:text-3xl font-semibold text-purple-accent mb-3 sm:mb-4 text-center">Project Title</h3>
+
+            <div class="mb-4 sm:mb-6">
+                <h4 class="text-lg sm:text-xl font-semibold text-purple-accent/80 mb-2">Description</h4>
+                <p id="project-modal-description" class="text-light-gray/90 text-xs sm:text-sm leading-relaxed">
+                    Placeholder for a more detailed project description. This section will elaborate on the project's goals, challenges, and the solutions implemented to achieve the final outcome. It will highlight the unique aspects of the project and its impact.
+                </p>
+            </div>
+
+            <div class="mb-4 sm:mb-6">
+                <h4 class="text-lg sm:text-xl font-semibold text-purple-accent/80 mb-2">Key Features</h4>
+                <ul id="project-modal-features" class="list-disc list-inside text-light-gray/90 space-y-1 text-xs sm:text-sm">
+                    <li>Payment API integration</li>
+                    <li>Registration Form</li>
+                    <li>Beautiful Design</li>
+                </ul>
+            </div>
+
+            <div class="mb-4 sm:mb-6">
+                <h4 class="text-lg sm:text-xl font-semibold text-purple-accent/80 mb-2">Gallery</h4>
+                <div id="project-modal-images" class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                    <!-- Placeholder images -->
+                    <img src="https://via.placeholder.com/300x200/A020F0/FFFFFF?text=Project+View+1" alt="Project Image 1" class="rounded-md shadow-md object-cover w-full h-auto">
+                    <img src="https://via.placeholder.com/300x200/A020F0/FFFFFF?text=Project+View+2" alt="Project Image 2" class="rounded-md shadow-md object-cover w-full h-auto">
+                    <img src="https://via.placeholder.com/300x200/A020F0/FFFFFF?text=Project+View+3" alt="Project Image 3" class="rounded-md shadow-md object-cover w-full h-auto">
+                </div>
+            </div>
+
+            <div class="mt-auto text-center pt-4">
+                <a id="project-modal-live-link" href="#" target="_blank" rel="noopener noreferrer" class="inline-block bg-purple-accent text-white font-semibold py-2 px-6 rounded-md hover:bg-opacity-80 transition-colors duration-300 text-sm sm:text-base">
+                    View Live Site
+                </a>
+            อน
+    <script>
+        // ... (previous script content like mobile menu, year, canva modal) ...
+
+        // Project Detail Modal Logic
+        const projectDetailButton = document.getElementById('key-project-details-button');
+        const projectModal = document.getElementById('project-modal');
+        const closeProjectModalButton = document.getElementById('close-project-modal');
+        // IDs for content (optional, if we need to dynamically set them later, but for now static)
+        // const projectModalTitle = document.getElementById('project-modal-title');
+        // const projectModalDescription = document.getElementById('project-modal-description');
+        // const projectModalFeatures = document.getElementById('project-modal-features');
+        // const projectModalImages = document.getElementById('project-modal-images');
+        // const projectModalLiveLink = document.getElementById('project-modal-live-link');
+
+        if (projectDetailButton && projectModal) {
+            projectDetailButton.addEventListener('click', () => {
+                // Update content if needed here, for now it's static in HTML
+                // projectModalTitle.textContent = "National Conferences WordPress Site for IAPSMCON";
+                projectModal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            });
+        }
+
+        if (closeProjectModalButton && projectModal) {
+            closeProjectModalButton.addEventListener('click', () => {
+                projectModal.classList.add('hidden');
+                document.body.style.overflow = '';
+            });
+        }
+
+        // Update Escape key to also close project modal (already done above by checking both modals)
+
+    </script>
 </body>
 </html>
